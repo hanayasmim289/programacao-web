@@ -1,0 +1,60 @@
+/* Cenário do jogo */
+#space {
+  width: 600px;  /* TAMX */
+  height: 900px; /* TAMY */
+  position: relative;
+  background-image: url("../assets/png/Background/starBackground.png"); /* marcador de asset */
+  background-repeat: repeat;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+
+/* HUD */
+#hud {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#lives img {
+  width: 24px;
+  height: 24px;
+  margin-left: 2px;
+}
+
+/* Nave do jogador */
+#ship {
+  position: absolute;
+  bottom: 20px;
+  left: 275px; /* centralizado (TAMX/2 - metade da nave) */
+  width: 50px;  /* placeholder */
+  height: 50px;
+}
+
+/* Inimigos */
+.enemy-ship {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.bullet {
+  position: absolute;
+  width: 5px;
+  height: 15px;
+  background: yellow;
+  border-radius: 2px;
+}
+
+#game-over-overlay button:hover {
+  background-color: #333;
+  color: #fff;
+}
