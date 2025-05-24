@@ -30,7 +30,7 @@ function initLives() {
 
 function updateScore(points) {
   score += points;
-  scoreDisplay.textContent = `Score: ${String(score).padStart(6, '0')}`;
+  scoreDisplay.textContent = `${String(score).padStart(6, '0')}`;
 }
 
 function updateLivesDisplay() {
@@ -151,7 +151,7 @@ function checkCollisions() {
         bulletRect.bottom > enemyRect.top
       ) {
         // Acertou inimigo!
-        updateScore(enemy.points); // pontos para EnemyShip (ajustar para outros inimigos depois)
+        updateScore(10); // pontos para EnemyShip (ajustar para outros inimigos depois)
 
         // Remover inimigo e tiro
         space.element.removeChild(enemy.element);

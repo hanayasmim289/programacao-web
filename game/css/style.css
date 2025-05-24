@@ -1,16 +1,27 @@
-/* Cenário do jogo */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
 #space {
   width: 600px;  /* TAMX */
   height: 900px; /* TAMY */
   position: relative;
-  background-image: url("../assets/png/Background/starBackground.png"); /* marcador de asset */
+  background-image: url("../assets/png/Background/starBackground.png");
   background-repeat: repeat;
   overflow: hidden;
   margin: 0 auto;
   border: 2px solid white;
 }
 
-/* HUD */
+
 #hud {
   position: absolute;
   top: 5px;
@@ -30,16 +41,14 @@
   margin-left: 2px;
 }
 
-/* Nave do jogador */
 #ship {
   position: absolute;
   bottom: 20px;
-  left: 275px; /* centralizado (TAMX/2 - metade da nave) */
-  width: 50px;  /* placeholder */
+  left: 275px; 
+  width: 50px; 
   height: 50px;
 }
 
-/* Inimigos */
 .enemy-ship {
   position: absolute;
   width: 40px;
